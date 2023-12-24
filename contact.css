@@ -1,0 +1,66 @@
+.card{
+    padding-block: 20px;
+    width: 350px;
+    height: 200px;
+    background-color: #D9D9D9;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 24px;
+
+}
+.card .form-group{
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.card p{
+    text-align: right;
+}
+
+.form-group{
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.card input, textarea{
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid black;
+    resize: none;
+}
+
+.submit-button{
+    margin-bottom: 51px;
+    outline: none;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.submit-button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message{
+    height: 30px;
+    overflow: hidden;
+    width: 150px;
+}

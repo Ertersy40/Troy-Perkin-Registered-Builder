@@ -1,0 +1,115 @@
+#image-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image-container {
+    margin-bottom: 20px; /* Space between image containers */
+}
+
+.image-container img {
+    margin-right: 10px;
+    width: 300px; /* Maximum width */
+    height: 170px; /* Maximum height */
+    object-fit: cover; /* Ensures the container is fully covered */
+    object-position: center top; /* Aligns the image to the top center for cropping */
+    display: block;
+    margin: auto;
+    border-radius: 22px;
+    transition: transform 0.1s;
+}
+
+.image-container img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.image-container p {
+    display: none;
+    text-align: center; /* Center-align the description */
+    margin-top: 8px; /* Space between the image and its description */
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px; /* Adjust as needed */
+}
+
+/* Caption of Modal Content */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 10%
+  }
+  
+  /* On Hover */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  

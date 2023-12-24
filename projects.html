@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="navHead">
+            <a href="index.html"><img src="Logo.svg" alt="logo" id="logoSmall"></a>
+            <p><b>Troy Perkin</b> Registered Builder</p>
+        </div>
+        <div class="pages">
+            <a href="/index.html">Home</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+            <ul class="mobile-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/testimonials.html">Testimonials</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="titles">
+        <h1>Projects</h1>
+        <p>See past client projects below - and what we can do for you.</p>
+    </div>
+    
+    <div id="image-grid"></div>
+    <div id="myModal" class="modal">
+        <!-- Left and Right Arrows -->
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+      
+        <!-- Existing Modal Content -->
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+      
+    <script src="projects.js"></script>
+
+    <div class="footerSection">
+        <div class="footerText">
+            <p>Troy Perkin</p>
+            <p>|</p>
+            <p><a href="tel:+61418134980">0418 134 980</a></p>
+            <p>|</p>
+            <p><a href="mailto:troyperkin@bigpond.com">troyperkin@bigpond.com</a></p>
+            <p>|</p>
+            <p>Melbourne VIC</p>
+        </div>
+        <img class="insta" src="Insta.svg">
+    </div>
+</body>
+</html>

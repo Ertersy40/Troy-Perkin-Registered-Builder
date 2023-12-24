@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('LeagueSpartan-Thin.woff2') format('woff2'),
+        url('LeagueSpartan-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'League Spartan';
+    margin: 0px;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+
+/* NAVBAR */
+
+.navBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    height: 80px;
+}
+
+#logoSmall{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.navHead{
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.navHead p{
+    padding-left: 20px;
+}
+
+.pages{
+    margin-right: 15px;
+    display: flex;
+    float: right;
+    align-items: flex-end;
+}
+
+.pages a{
+    padding: 10px;
+}
+
+/* HAMBURGER MAGIC */
+
+#hamburger-icon {
+    margin: auto 0;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: none;
+    cursor: pointer
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    right: 0; /* When open, it's in view */
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 45px; /* Adjust according to your header height */
+    right: -110%; /* Starts from the right out of the view */
+    width: 100%;
+    background-color: black;
+    z-index: 6;
+    display: flex; /* Always show, but out of view when not "open" */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px; /* Add some padding if you like */
+    max-height: 130px; /* Control height here */
+    overflow: hidden; /* Allow scrolling if content is more than the height */
+}
+
+@media only screen and (max-width:600px) {
+    #hamburger-icon{
+        display: block;
+    }
+    .pages{
+        display: none;
+    }
+}
+
+
+/* HERO */
+
+.heroSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+#logoBig{
+    z-index: -2;
+    position: absolute;
+    width: 638px;
+    height: 638px;
+    top: 90px;
+    left: -250px;
+    opacity: 5%;
+}
+
+.actionButton{
+    line-height: 50px;
+    text-align: center;
+    width: 193px;
+    height: 50px;
+    border-radius: 339px;
+    background-color: #444444;
+    border: 3px solid white;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.heroWriting{
+    margin-top: -40px;
+    margin-right:   60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.heroWriting h1 br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: -140px; /* change this to whatever height you want it */
+}
+
+.heroWriting h1{
+    margin-top: -30px;
+    margin-bottom: 70px;
+    display: block;
+    margin-top: 20px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 200px;
+}
+
+.heroWriting p{
+    margin-top: 0px;
+}
+
+.heroImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images horizontally */
+    justify-content: flex-start; /* Align images to the top */
+    z-index: -1;
+    height: 638px;
+    overflow: hidden;
+}
+
+.carouselImage {
+    width: 467.29px;
+    margin-top: 20px;
+    border-radius: 25px;
+    transition: margin-top 1s ease; /* Smooth transition for movement */
+}
+
+.carouselImage.first {
+    margin-top: -200px; /* Adjust if necessary */
+}
+
+
+/* .first {
+    transform: translateY(-100%);
+}
+
+.second {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.third {
+    transform: translateY(100%);
+} */
+
+/* LOCATIONS */
+
+.locationsSection{
+    background-color: #292929;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.locationsSection h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.mapImage{
+    width: 636px;
+    border-radius: 32px;
+}
+
+.locationContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.locationContent p{
+    width: 272px;
+}
+
+/* SPECIALTIES */
+
+.specialtiesSection{
+    width: 100%;
+    height: 70vh;
+}
+
+.specialties{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.specialtiesContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.specialtiesContent p{
+    font-size: 32px;
+    width: 850px;
+    text-align: center;
+}
+
+.specialty{
+    width: 120px;
+}
+
+.specialtiesImages, .specialtiesTitles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+
+.specialtiesImages img{
+    width: 140px;
+    height: 140px;
+    border-radius: 32px;
+}
+
+/* CONTACT */
+
+.contactSection{
+    width: 100%;
+    height: 343px;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactSection h3{
+    margin-top: 83px;
+    font-size: 40px;
+}
+.contactSection p{
+    width: 550px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footerSection{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.insta{
+    width: 30px;
+    height: 30px;
+
+}
+
+.titles{
+    width: 100%;
+    line-height: 1px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.titles p{
+    width: 220px;
+    line-height: 20px;
+    margin-bottom: -10px;
+}

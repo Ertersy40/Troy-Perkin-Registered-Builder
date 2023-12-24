@@ -1,0 +1,87 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="format-detection" content="telephone=no">
+      <meta charset = "UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="contact.css"/>
+      <script src="script.js"></script>
+      <title>Troy Perkin Registered Builder Melbourne</title>
+    </head>
+    <body>
+      <div class="navBar">
+        <div class="navHead">
+            <a href="index.html"><img src="Logo.svg" alt="logo" id="logoSmall"></a>
+            <p><b>Troy Perkin</b> Registered Builder</p>
+        </div>
+        <div class="pages">
+            <a href="/index.html">Home</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+            <ul class="mobile-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/testimonials.html">Testimonials</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="titles">
+            <h1>Contact Us</h1>
+            <p>Fill up the form below to send us a message.</p>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="a5a3e78a-61f8-4588-b84f-d578f4610549" />
+            <input type="hidden" name="subject" value="New Website Enquiry" />
+            <input type="checkbox" name="botcheck" style="display: none;" />
+            <div class="card">
+              <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" name="name" id="name" required class="form-input" />
+              </div>
+              <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" name="email" id="email" required class="form-input" />
+              </div>
+              <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="text" name="phone" id="phone" required class="form-input" />
+              </div>
+              <div class="form-group message-form">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea rows="1" name="message" id="message" class="form-input" required></textarea>
+              </div>
+            </div>
+            <p id="submission-result"></p>
+            
+            <div class="form-group">
+                <button type="submit" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+        <div class="footerSection">
+          <div class="footerText">
+              <p>Troy Perkin</p>
+              <p>|</p>
+              <p><a href="tel:+61418134980">0418 134 980</a></p>
+              <p>|</p>
+              <p><a href="mailto:troyperkin@bigpond.com">troyperkin@bigpond.com</a></p>
+              <p>|</p>
+              <p>Melbourne VIC</p>
+          </div>
+          <img class="insta" src="Insta.svg">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.content{
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: 10px;
+  }
+
+.card{
+    line-height: 20px;
+    background-color: #3E3E3E;
+    height: fit-content;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 20px;
+
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    position: relative;
+}
+.name{
+    text-align: right;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+  
+  figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  
+  .container {
+    column-count: 4;
+    column-gap: 10px;
+  }
