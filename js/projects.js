@@ -36,7 +36,7 @@ function loadImages() {
 
             // Add the image
             const imgElement = document.createElement('img');
-            imgElement.src = `/project_images/${image.name}`;
+            imgElement.src = `assets/project_images/${image.name}`;
             imgElement.onclick = function() {
                 openModal(image);
             };
@@ -102,7 +102,7 @@ function openModal(image) {
     const modalImg = document.getElementById("img01");
     const captionText = document.getElementById("caption");
     modal.style.display = "block";
-    modalImg.src = `/project_images/${image.name}`;
+    modalImg.src = `assets/project_images/${image.name}`;
     captionText.innerHTML = image.description;
 
     // Close modal when clicking on the close button
