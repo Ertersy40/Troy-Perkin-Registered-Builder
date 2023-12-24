@@ -12,7 +12,7 @@ function showModalImage() {
     const image = imageInfo[currentImageIndex];
 
     modal.style.display = "block";
-    modalImg.src = `/project_images/${image.name}`;
+    modalImg.src = `assets/project_images/${image.name}`;
     captionText.innerHTML = image.description;
 }
 
