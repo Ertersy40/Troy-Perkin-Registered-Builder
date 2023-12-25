@@ -29,5 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    setInterval(cycleImages, 4000);
+    if (window.innerWidth > 600) {
+        setInterval(cycleImages, 4000);
+    }
+
+    // Optional: Listen for window resize and restart/stop the interval
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 600) {
+            setInterval(cycleImages, 4000);
+        }
+    });
 });
