@@ -161,17 +161,12 @@ img {
         flex-direction: column;
     }
 
-    .locationContent, .specialties {
+    .locationContent {
         flex-direction: column;
     }
 
     .heroImages, .carouselImage {
         width: 100%; /* Full width on mobile */
-    }
-
-    .specialtiesContent p, .contactSection p {
-        width: 90%; /* Adjust width for mobile */
-        font-size: 16px; /* Smaller font size */
     }
 }
 
