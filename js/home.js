@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    setInterval(cycleImages, 2000);
+    setInterval(cycleImages, 4000);
 });
