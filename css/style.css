@@ -157,10 +157,6 @@ img {
         display: flex; /* Show for mobile */
     }
 
-    .heroSection {
-        flex-direction: column;
-    }
-
     .locationContent {
         flex-direction: column;
     }

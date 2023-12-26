@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function cycleImages() {
+        if (window.innerWidth < 860) {
+            carouselImages.forEach((img) => {
+                img.style.marginTop = '20px';
+            });
+            return;
+        }
         const totalImages = carouselImages.length;
         const topMargins = [
             [-200, 20, 20],
@@ -29,14 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (window.innerWidth > 600) {
-        setInterval(cycleImages, 4000);
-    }
+    setInterval(cycleImages, 4000);
 
-    // Optional: Listen for window resize and restart/stop the interval
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 600) {
-            setInterval(cycleImages, 4000);
-        }
-    });
 });

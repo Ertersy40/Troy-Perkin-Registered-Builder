@@ -68,7 +68,8 @@
 }
 
 .carouselImage {
-    width: 467.29px;
+    width: 90%;
+    max-width: 467.29px;
     margin-top: 20px;
     border-radius: 25px;
     transition: margin-top 1s ease; /* Smooth transition for movement */
@@ -78,11 +79,7 @@
     margin-top: -200px; /* Adjust if necessary */
 }
 
-@media only screen and (max-width:600px) {
-    .heroSection{
-        height: fit-content;
-    }
-
+@media only screen and (max-width:860px) {
     .carouselImage{
         transition: none;
     }
@@ -90,7 +87,13 @@
     .carouselImage.first{
         margin-top: 0px;
     }
+}
 
+@media only screen and (max-width:860px) {
+    .heroSection{
+        height: fit-content;
+        flex-direction: column;
+    }
     .heroImages{
         height: fit-content;
     }
@@ -153,6 +156,7 @@
 
 .specialtiesContent p{
     font-size: 32px;
+    max-width: 267px;
     width: 90%;
     text-align: center;
 }
