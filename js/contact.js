@@ -19,8 +19,28 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error("Element with id 'message' was not found.");
     }
+    const mathQuestionText = document.getElementById('math-question-text');
+    const mathAnswer = document.getElementById('math-answer');
+
+    function generateMathQuestion() {
+        const num1 = Math.floor(Math.random() * 10);
+        const num2 = Math.floor(Math.random() * 10);
+        const question = `${num1} + ${num2}`;
+        mathQuestionText.textContent = `What is ${question}?`;
+        return num1 + num2;
+    }
+
+    let correctAnswer = generateMathQuestion();
+        
 
     form.addEventListener("submit", function (e) {
+        if (parseInt(mathAnswer.value) !== correctAnswer) {
+            e.preventDefault();
+            result.innerHTML = "Incorrect math answer. Please try again.";
+            correctAnswer = generateMathQuestion();
+            return;
+        }
+        
         e.preventDefault();
         const formData = new FormData(form);
         const object = {};
@@ -57,5 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 result.style.display = "none";
             }, 5000);
         });
+        correctAnswer = generateMathQuestion();
     });
 });
