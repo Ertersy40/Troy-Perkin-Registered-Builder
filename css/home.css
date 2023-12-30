@@ -58,27 +58,33 @@
     margin-top: 0px;
 }
 
-.heroImages {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center images horizontally */
-    justify-content: flex-start; /* Align images to the top */
-    z-index: -1;
-    height: 638px;
+.carousel-container {
+    width: 400px;
+    height: 100%; /* Adjust the height of the visible area */
     overflow: hidden;
+    display: flex;
+    align-items: flex-end; /* Centers the carousel vertically */
+    justify-content: flex-end; /* Centers the carousel horizontally */
+    margin: none;
+    position: relative;
 }
 
-.carouselImage {
-    width: 90%;
-    max-width: 467.29px;
-    margin-top: 20px;
-    border-radius: 25px;
-    transition: margin-top 1s ease; /* Smooth transition for movement */
+.carousel {
+    width: 100%;
+    position: relative;
+    height: 200%; /* Adjust this to control the spacing between images */
 }
 
-.carouselImage.first {
-    margin-top: -200px; /* Adjust if necessary */
+.carousel img {
+    border-radius: 38px;
+    background-color: aqua;
+    width: 400px; /* Fixed width for all images */
+    height: 300px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    position: absolute;
+    transition: transform 1s ease;
 }
+
 
 @media only screen and (max-width:860px) {
     .carouselImage{
