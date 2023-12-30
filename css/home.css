@@ -59,7 +59,7 @@
 }
 
 .carousel-container {
-    width: 400px;
+    width: 550px;
     height: 100%; /* Adjust the height of the visible area */
     overflow: hidden;
     display: flex;
@@ -78,8 +78,8 @@
 .carousel img {
     border-radius: 38px;
     background-color: aqua;
-    width: 400px; /* Fixed width for all images */
-    height: 300px; /* Fixed height for all images */
+    width: 540px; /* Fixed width for all images */
+    height: 340px; /* Fixed height for all images */
     object-fit: cover; /* Ensures images cover the area without distortion */
     position: absolute;
     transition: transform 1s ease;
