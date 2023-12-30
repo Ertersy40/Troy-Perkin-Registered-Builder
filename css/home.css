@@ -163,7 +163,7 @@
 
 .specialtiesContent p{
     font-size: 32px;
-    max-width: 267px;
+    max-width: 550px;
     width: 90%;
     text-align: center;
 }
@@ -205,6 +205,7 @@
 
 .contactSection p{
     width: 90%;
+    max-width: 550px;
     font-size: 25px;
     text-align: center;
 }
