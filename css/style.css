@@ -35,12 +35,6 @@ a:hover {
 }
 
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 
 /* NAVBAR */
 .navBar{
@@ -54,14 +48,14 @@ img {
 
 #logoSmall{
     margin-left: 15px;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
 }
 
 .navHead{
     display: flex;
     width: 50%;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .navHead p{
