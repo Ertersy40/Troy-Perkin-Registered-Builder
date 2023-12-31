@@ -27,6 +27,12 @@
     color: white;
 }
 
+.actionButton:hover{
+    background-color: white;
+    border: 3px solid #444444;
+    color: black;
+}
+
 .heroWriting{
     margin-left: 20px;
     display: flex;
