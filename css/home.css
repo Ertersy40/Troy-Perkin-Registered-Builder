@@ -86,24 +86,13 @@
     transition: transform 1s ease;
 }
 
-
-@media only screen and (max-width:860px) {
-    .carouselImage{
-        transition: none;
-    }
-
-    .carouselImage.first{
-        margin-top: 0px;
-    }
-}
-
 @media only screen and (max-width:860px) {
     .heroSection{
-        height: fit-content;
+        height: 155vh;
         flex-direction: column;
     }
-    .heroImages{
-        height: fit-content;
+    .carousel-container{
+        margin-top: 80px;
     }
 }
 
