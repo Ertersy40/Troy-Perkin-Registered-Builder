@@ -25,14 +25,9 @@
     background-color: #444444;
     border: 3px solid white;
     color: white;
-    margin-bottom: -1px;
-    margin-top: 20px;
 }
 
 .heroWriting{
-    max-height: 507px;
-    margin-top: -40px;
-    margin-right:   60px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -42,22 +37,20 @@
 .heroWriting h1 br {
     display: block; /* makes it have a width */
     content: ""; /* clears default height */
-    margin-top: -140px; /* change this to whatever height you want it */
 }
 
 .heroWriting h1{
-    max-height: 500px;
-    margin-top: -30px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    height: fit-content;
     display: block;
-    margin-top: 54px;
     font-size: 50px;
     letter-spacing: 1px;
-    line-height: 200px;
+    line-height: 60px;
 }
 
 .heroWriting p{
-    margin-top: 18px;
+    margin-bottom: 10px;
 }
 
 .carousel-container {
