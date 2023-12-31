@@ -46,6 +46,7 @@
 }
 
 .heroWriting h1{
+    max-height: 500px;
     margin-top: -30px;
     margin-bottom: 70px;
     display: block;
